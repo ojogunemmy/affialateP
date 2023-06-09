@@ -16,7 +16,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0fr 0.03fr 0.1fr 1fr 0.1fr;
     grid-template-areas: "nav nav" "main main" "content1 content1" "content2 content2" "footer footer";
     border-radius: 0.5rem;
     background-color:var(--div-background-color) ;
@@ -57,12 +57,13 @@ body{
 }
 
 #main{
-
     grid-area: main;
     color: black;
     font-size: 28px;
     text-align: left;
     font-weight: 900;
+
+
 }
 
 .main01{
@@ -82,57 +83,85 @@ body{
 }
 
 .div1{
+    margin-top: 0px;
     align-self: baseline;
     text-align: justify;
     font-size: 24px;
     font-weight: 100;
-    background-color: blueviolet;
-    
+    flex-basis: 500px;
+   
+   
     
 
 }
 .div2{
-    background-color: aquamarine;
+    margin-top: 0px;
     margin-left: 30px;
     align-self: baseline;
     font-size: 40px;
-    font-weight: 700;
+    flex-basis: 500px;
+    font-weight: bolder;
    
 }
 
 span{
     color: rgb(18, 18, 115);
 }
-
 p{
     color: rgb(0, 0, 0);
+    text-align: left;
+   
+}
+.img_sm{
+
+    height: 500px;
+    width:400px;
+   
 }
 
 #content2{
-    background-image: url("./img/sch1.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    background-blend-mode: screen;
-    background-attachment:scroll;
     grid-area: content2;
-    background-color: blue;
-    border-radius: 0.2rem;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Calibri Light";
+    word-spacing: 1px;
+    margin: 25px;
+    
+
+}
+.story1>*{
+    margin-top: 50px;
+}
+.story1{
+    max-width: 900px;
+    font-size: 24px;
+}
+
+.span_under{
+    text-decoration: underline;
+    color:black
+}
+.span_bold{
+
+    font-weight:bold;
+    color:black;
 }
 #footer{
-    background-image: url("./img/sch2.jpeg");
-    background-repeat: no-repeat;
-    background-size:100% 100%;
     grid-area: footer;
-    background-color: black;
-    color: whitesmoke;
-    border-radius: 0.2rem;
+   color: black;
+   text-align: center;
+   font-size: 18px;
+   padding: 100px;
+  
 }
 @media only screen and (max-width:700px){
     .container{
         display: grid;
         grid-template-columns:1fr;
-        grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.02fr 0.2fr 1fr 1fr;
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
 
     }
@@ -149,12 +178,22 @@ p{
         font-size: 24px;
     }
     #content1{ 
-        background-color: black;
        flex-direction: column;
+       align-items: center;
       
+    }
+    .div1{
+        margin-left: 0px;
+        flex-basis: 230px;
+       
     }
     .div2{
         margin-left: 0px;
+        flex-basis: 230px;
        
+    }
+    #content2{
+       margin: 50px;
+    
     }
 }
