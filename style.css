@@ -71,29 +71,33 @@ body{
 }
 
 #content1{
-   padding: 60px;
+   padding: 10px;
    grid-area: content1;
    color: black;
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
+ 
 
 }
 
 .div1{
     align-self: baseline;
-    flex-basis: 350px;
-    text-align: left;
+    text-align: justify;
     font-size: 24px;
     font-weight: 100;
+    background-color: blueviolet;
+    
+    
 
 }
 .div2{
+    background-color: aquamarine;
     margin-left: 30px;
     align-self: baseline;
-    flex-basis: 350px;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
+   
 }
 
 span{
@@ -101,9 +105,6 @@ span{
 }
 
 p{
-   
-    letter-spacing: 0.6px;
-    font-weight: 500;
     color: rgb(0, 0, 0);
 }
 
@@ -131,7 +132,7 @@ p{
     .container{
         display: grid;
         grid-template-columns:1fr;
-        grid-template-rows: 0.2fr 0.1fr 0.5fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr;
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
 
     }
@@ -148,7 +149,9 @@ p{
         font-size: 24px;
     }
     #content1{ 
+        background-color: black;
        flex-direction: column;
+      
     }
     .div2{
         margin-left: 0px;
