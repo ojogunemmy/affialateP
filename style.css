@@ -1,0 +1,155 @@
+:root{
+    --body-background-color:white;
+    --div-background-color:whitesmoke;
+}
+
+body{
+    
+    background-color: var(--body-background-color);
+    text-align: center;
+    margin: 2px;
+    font-family: "Calibri Light";
+   
+    
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "nav nav" "main main" "content1 content1" "content2 content2" "footer footer";
+    border-radius: 0.5rem;
+    background-color:var(--div-background-color) ;
+    color: white;    
+    box-shadow: 5px 5px white;
+    padding: 5px;
+    
+}
+
+#nav{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: nav;
+    background-color:rgba(50, 47, 4, 0.89);
+    padding: 17px;
+    
+}
+
+.heading{
+    font-family: serif;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 900;
+    max-width: 800px;
+    margin:20px;
+    
+}
+.subheading{
+    font-family:"Calibri Light";
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    
+}
+
+#main{
+
+    grid-area: main;
+    color: black;
+    font-size: 28px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.main01{
+
+   margin-left: 60px;
+}
+
+#content1{
+    padding: 60px;
+   grid-area: content1;
+   color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.div1{
+    align-self: baseline;
+    flex-basis: 350px;
+    text-align: left;
+    font-size: 24px;
+}
+.div2{
+    margin-left: 30px;
+    align-self: baseline;
+    flex-basis: 350px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+span{
+    color: rgb(18, 18, 115);
+}
+
+p{
+   
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+#content2{
+    background-image: url("./img/sch1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    background-blend-mode: screen;
+    background-attachment:scroll;
+    grid-area: content2;
+    background-color: blue;
+    border-radius: 0.2rem;
+}
+#footer{
+    background-image: url("./img/sch2.jpeg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    grid-area: footer;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 0.2rem;
+}
+@media only screen and (max-width:700px){
+    .container{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 0.2fr 0.1fr 0.5fr 1fr 1fr;
+        grid-template-areas: "nav" "main" "content1" "content2" "footer";
+
+    }
+   
+    .main01{
+        font-size: 28px;
+        margin: 10px;
+    }
+    .heading{
+        font-size: 32px;
+        margin: 40px;
+    }
+    .subheading{
+        font-size: 24px;
+    }
+    #content1{ 
+       flex-direction: column;
+    }
+    .div2{
+        margin-left: 0px;
+       
+    }
+}
