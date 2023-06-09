@@ -119,11 +119,23 @@ p{
 }
 .img_sm{
 
-    height: 500px;
+    height: 505px;
     width:400px;
    
 }
+.img_ssm{
 
+    height: 720px;
+    width:400px;
+   
+}
+.gallery{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:start;
+
+}
 #content2{
     grid-area: content2;
     color:black;
@@ -133,9 +145,18 @@ p{
     align-items: center;
     font-family: "Calibri Light";
     word-spacing: 1px;
-    margin: 25px;
+    margin: 20px;
+  
     
 
+}
+.img_div{
+    margin-top: 40px;
+    height: fit-content;
+    border-color: rgb(77, 75, 75);
+    border-width: 1px;
+    box-shadow: 5px 3px  rgb(226, 217, 217);
+    border-radius: 4px;
 }
 .story1>*{
     margin-top: 50px;
@@ -154,6 +175,13 @@ p{
     font-weight:bold;
     color:black;
 }
+
+.div3{
+    margin: 20px;
+    font-size: 40px;
+    font-weight:900;
+}
+
 #footer{
     grid-area: footer;
    color: black;
@@ -162,10 +190,21 @@ p{
    padding: 100px;
   
 }
+@media only screen and (max-width:1200px){
+
+    .gallery{
+       
+      
+       
+        flex-direction: column;
+    
+    }
+
+}
 @media only screen and (max-width:700px){
     .container{
         grid-template-columns:1fr;
-        grid-template-rows: 0.1fr 0.03fr 0.2fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.03fr 0.1fr 1fr 0.1fr;
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
         margin: 0px;
         width: fit-content;
@@ -223,6 +262,13 @@ p{
        margin-right: 50px;
        margin-top: 0px;
        
+    
+    }
+    .gallery{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
     
     }
 }
