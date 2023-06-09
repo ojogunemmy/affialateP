@@ -2,12 +2,14 @@
     --body-background-color:white;
     --div-background-color:whitesmoke;
 }
+*{
+    box-sizing: border-box;
+}
 
 body{
     
     background-color: var(--body-background-color);
     text-align: center;
-    margin: 2px;
     font-family: "Calibri Light";
    
     
@@ -16,13 +18,14 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 0.03fr 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.2fr 0.03fr 0.1fr 1fr 0.1fr;
     grid-template-areas: "nav nav" "main main" "content1 content1" "content2 content2" "footer footer";
-    border-radius: 0.5rem;
+    width:fit-content;
     background-color:var(--div-background-color) ;
-    color: white;    
-    box-shadow: 5px 5px white;
-    padding: 5px;
+    color: white;  
+    
+    
+    
     
 }
 
@@ -35,7 +38,7 @@ body{
     align-items: center;
     grid-area: nav;
     background-color:rgba(50, 47, 4, 0.89);
-    padding: 17px;
+    padding: 0px;
     
 }
 
@@ -44,7 +47,7 @@ body{
     text-align: center;
     font-size: 75px;
     font-weight: 900;
-    max-width: 800px;
+    max-width: 850px;
     margin:20px;
     
 }
@@ -53,6 +56,8 @@ body{
     font-family:"Calibri Light";
     text-align: center;
     font-size: 40px;
+    padding: 20px;
+    margin: 20px;
     
 }
 
@@ -67,8 +72,12 @@ body{
 }
 
 .main01{
-
-   margin-left: 60px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: start;
+ flex-wrap: wrap;
+ flex-basis: 250px;
 }
 
 #content1{
@@ -76,22 +85,19 @@ body{
    grid-area: content1;
    color: black;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
    align-items: center;
- 
 
 }
 
 .div1{
-    margin-top: 0px;
+    margin: 25px;
     align-self: baseline;
     text-align: justify;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 100;
-    flex-basis: 500px;
-   
-   
-    
+    flex-basis: 300px;
+  
 
 }
 .div2{
@@ -99,7 +105,7 @@ body{
     margin-left: 30px;
     align-self: baseline;
     font-size: 40px;
-    flex-basis: 500px;
+    flex-basis: 300px;
     font-weight: bolder;
    
 }
@@ -159,16 +165,30 @@ p{
 }
 @media only screen and (max-width:700px){
     .container{
-        display: grid;
         grid-template-columns:1fr;
-        grid-template-rows: 0.2fr 0.02fr 0.2fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.03fr 0.2fr 1fr 1fr;
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
+        margin: 0px;
+        width: fit-content;
 
     }
+
+   #main{
+   
+    margin-left: 50px;
+    margin-right: 50px;
+    
+
+   }
+   
+    
    
     .main01{
-        font-size: 28px;
-        margin: 10px;
+       height: fit-content;
+       width: fit-content;
+       font-size: 24px;
+       align-self:auto;
+       
     }
     .heading{
         font-size: 32px;
@@ -176,15 +196,22 @@ p{
     }
     .subheading{
         font-size: 24px;
+
+
+        
     }
     #content1{ 
+       
        flex-direction: column;
        align-items: center;
-      
+       justify-content: start;
+       margin-left: 50px;
+       margin-right: 50px;
     }
     .div1{
         margin-left: 0px;
         flex-basis: 230px;
+        
        
     }
     .div2{
@@ -193,7 +220,10 @@ p{
        
     }
     #content2{
-       margin: 50px;
+       margin-left: 50px;
+       margin-right: 50px;
+       margin-top: 0px;
+       
     
     }
 }
