@@ -254,7 +254,13 @@ li{
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
         margin: 0px;
         width: fit-content;
-
+        height: fit-content;
+        max-width: fit-content;
+        max-width: fit-content;
+    }
+    #nav{
+    
+        width: fit-content;
     }
 
    #main{
