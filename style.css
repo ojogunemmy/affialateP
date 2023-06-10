@@ -130,11 +130,26 @@ p{
     width:400px;
    
 }
+.img_sp{
+
+    height: 505px;
+    width:300px;
+   flex-flow: wrap
+   
+}
+.img_spl{
+    flex-flow: wrap;
+    width:500px;
+    
+    
+}
 .gallery{
     width:100%;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
+    flex-wrap: wrap;
+    
 
 }
 #content2{
@@ -179,7 +194,7 @@ p{
 
 .div3{
     margin: 20px;
-    font-size: 40px;
+    font-size: 36px;
     font-weight:900;
 }
 
