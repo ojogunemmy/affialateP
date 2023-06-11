@@ -169,8 +169,6 @@ p{
     word-spacing: 1px;
     margin: 20px;
     width: fit-content;
-  
-    
 
 }
 .img_div{
@@ -178,7 +176,7 @@ p{
     height: fit-content;
     border-color: rgb(77, 75, 75);
     border-width: 1px;
-    box-shadow: 5px 3px  rgb(226, 217, 217);
+    box-shadow: 5px 3px 5px rgb(226, 217, 217);
     border-radius: 4px;
 }
 .story1>*{
@@ -221,17 +219,12 @@ p{
     background-color: rgb(165, 176, 83);
     padding: 20px;
 }
-ul{
-    margin: 0px;
-    padding: 0px;
-   
-    
-}
+
 .diffUL{
-    float: left;
+   
     margin: 0px;
     padding: 0px;
-    background-color: aquamarine;
+    width: 80%;
     
 }
 
@@ -250,10 +243,10 @@ button>*{
 
 button{
     background-color: rgb(247, 79, 19);
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 8px ;
-    height: 80px;
-    width: 400px;
+    height: 90px;
+    width: 500px;
     border-color: white;
     color: white;
 }
@@ -266,7 +259,7 @@ button{
 
 li{
     text-align: justify;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 20px;
     
  
@@ -314,22 +307,20 @@ li{
     border-style: solid;
     border-width: 4px;
     padding: 15px;
-    width: fit-content;
+    width: 25%;
     margin-bottom: 40px;
 }
 .paylink{
     text-decoration: none;
     color:rgb(24, 81, 24);
-    font-size: 24px;
+    font-size: 5%;
     font-weight: bold;
 }
 details{
     display: block;
-    
     border-radius: 10px;
-    min-width: 300px;
-    width: 700px;
-
+    margin: 20px;
+    width: 80%;
     border-color: lightgray;
     border-style: solid;
     border-width: 1px;
@@ -341,6 +332,7 @@ details>p{
     color: rgb(146, 138, 138);
     font-size: 18px;
     margin: 10px;
+    
 }
 details>summary{
     padding: 5px;
@@ -348,12 +340,13 @@ details>summary{
     text-align: justify;
     background-color:var(--div-background-color);
     font-size: 24px;
+    width: 100%;
 }
 
 #footer{
    grid-area: footer;
    padding: 25px;
-   font-size: 16px;
+   font-size: 18px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -365,10 +358,6 @@ details>summary{
   
 }
 @media only screen and (max-width:1200px){
-    details{
-        width: 600px;
-
-    }
    
     .container{
         grid-template-columns:1fr;
@@ -475,12 +464,5 @@ details>summary{
         width:300px;
        
     }
-    details{
-       
-       
-        width: 500px;
     
-       
-    
-    }
 }
