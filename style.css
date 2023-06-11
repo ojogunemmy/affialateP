@@ -8,7 +8,7 @@
 
 body{
     
-    background-color: var(--body-background-color);
+    background-color: var(--div-background-color);
     text-align: center;
     font-family: "Calibri Light";
     width: fit-content;
@@ -21,12 +21,11 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 0fr 0fr 1fr 0.1fr;
+    grid-template-rows: 0fr 0fr 0fr 1fr 0fr;
     grid-template-areas: "nav nav" "main main" "content1 content1" "content2 content2" "footer footer";
     width:fit-content;
     background-color:var(--div-background-color) ;
     color: white;  
-    transform: scale(1);
     letter-spacing: 0.5px;
     word-spacing: 1px;
     width: fit-content;
@@ -309,10 +308,12 @@ li{
    
     .container{
         grid-template-columns:1fr;
-        grid-template-rows: 0.1fr 0.0fr 0fr 1fr 0fr;
+        grid-template-rows: 0fr 0.0fr 0fr 1fr 0fr;
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
         margin: 0px;
         width: fit-content;
+        transform-origin: 10px 10px;
+        transform: scale(1);
 
     }
 
@@ -326,17 +327,22 @@ li{
         width:350px;
     }
 }
-
-@media only screen and (max-width:700px){
+@media only screen and (max-width:800px){
+    .container{
+        transform-origin: 10px 10px;
+        transform: scale(0.);
+    }
+}
+@media only screen and (max-width:580px){
     .container{
         grid-template-columns:1fr;
-        grid-template-rows: 0fr 0fr 0fr 1fr 0fr;
+        grid-template-rows: 0.05fr 0fr 0fr 0fr 0fr;
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
         margin: 0px;
         width: fit-content;
         height: fit-content;
-        max-width: fit-content;
-        max-width: fit-content;
+        transform-origin: 10px 10px;
+        transform: scale(0.7);
     }
     #nav{
     
@@ -360,11 +366,11 @@ li{
        
     }
     .heading{
-        font-size: 32px;
+        font-size: 40px;
         margin: 40px;
     }
     .subheading{
-        font-size: 24px;
+        font-size: 32px;
 
 
         
