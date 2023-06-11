@@ -211,7 +211,7 @@ p{
     width: fit-content;
 }
 .div3{
-    margin: 20px;
+    
     font-size: 36px;
     font-weight:900;
     color: black;
@@ -228,9 +228,10 @@ ul{
     
 }
 .diffUL{
+    float: left;
     margin: 0px;
     padding: 0px;
-    width: 600px;
+    background-color: aquamarine;
     
 }
 
@@ -267,6 +268,7 @@ li{
     text-align: justify;
     font-size: 24px;
     margin-top: 20px;
+    
  
 }
 .triangle{
