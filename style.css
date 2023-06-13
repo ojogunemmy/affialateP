@@ -6,14 +6,18 @@
     box-sizing: border-box;
 }
 
-body,html{
+html{
+    transform: scale(1);
+}
+
+body{
     
     background-color: var(--div-background-color);
     text-align: center;
     font-family: "Calibri Light";
     width: fit-content;
     height: fit-content;
-    overflow-x: hidden;
+   
 
 }
 .container{
