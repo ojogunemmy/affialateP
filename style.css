@@ -6,18 +6,14 @@
     box-sizing: border-box;
 }
 
-html{
-    transform: scale(1);
-    transform-origin: top right;
-}
-
-body{
+body,html{
     
     background-color: var(--div-background-color);
     text-align: center;
     font-family: "Calibri Light";
     width: fit-content;
     height: fit-content;
+    zoom: reset;
    
 
 }
