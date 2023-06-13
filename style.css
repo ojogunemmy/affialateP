@@ -8,19 +8,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
-}
-
-@-ms-viewport {
-  width: device-width;
-}
-
 body{
     
     background-color: var(--div-background-color);
@@ -41,7 +28,7 @@ body{
     color: white;  
     letter-spacing: 0.5px;
     word-spacing: 1px;
-    width: 100%;
+    width:fit-content;
     
     
     
@@ -301,7 +288,7 @@ li{
 }
 .triangle{
     height: 200px;
-    width: fit-content;
+    width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     background-color: rgb(1, 1, 49);
     color: white;
