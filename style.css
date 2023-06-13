@@ -423,6 +423,7 @@ details>summary{
         grid-template-rows: 0fr 0fr 0fr 1fr 0fr;
         grid-template-areas: "nav" "main" "content1" "content2" "footer";
         margin: 0px;
+        zoom:60%;
        
     }
     #nav{
