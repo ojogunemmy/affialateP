@@ -8,6 +8,7 @@
 
 html{
     transform: scale(1);
+    touch-action: manipulation;
 }
 
 body{
