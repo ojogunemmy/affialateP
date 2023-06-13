@@ -8,7 +8,7 @@
 
 html{
     transform: scale(1);
-    touch-action: manipulation;
+    transform-origin: top right;
 }
 
 body{
