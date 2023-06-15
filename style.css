@@ -152,6 +152,13 @@ p{
     
     
 }
+.img_spll{
+    flex-flow: wrap;
+    width:650px;
+    height: 550px;
+    
+    
+}
 .gallery{
     width:100%;
     display: flex;
